@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AutoCompleteGooglePlaceSearchBar.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    
+    IBOutlet AutoCompleteGooglePlaceSearchBar *autoCompleteSearchBar;
+}
 
 @end

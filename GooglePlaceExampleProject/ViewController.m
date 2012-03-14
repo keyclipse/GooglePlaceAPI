@@ -17,11 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    autoCompleteSearchBar.autoCompleteTableView.frame = CGRectMake(0, 44, 320, 460-44-216);
+    [self.view addSubview:autoCompleteSearchBar.autoCompleteTableView];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
 {
+    [autoCompleteSearchBar release];
+    autoCompleteSearchBar = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -31,4 +35,8 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (void)dealloc {
+    [autoCompleteSearchBar release];
+    [super dealloc];
+}
 @end
