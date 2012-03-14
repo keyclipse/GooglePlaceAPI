@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DDAAC6C15106EF50056840B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDAAC6B15106EF50056840B /* UIKit.framework */; };
+		5DDAAC6E15106EF50056840B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDAAC6D15106EF50056840B /* Foundation.framework */; };
+		5DDAAC7015106EF50056840B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDAAC6F15106EF50056840B /* CoreGraphics.framework */; };
+		5DDAAC7615106EF50056840B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DDAAC7415106EF50056840B /* InfoPlist.strings */; };
+		5DDAAC7815106EF50056840B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDAAC7715106EF50056840B /* main.m */; };
+		5DDAAC7C15106EF50056840B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDAAC7B15106EF50056840B /* AppDelegate.m */; };
+		5DDAAC7F15106EF50056840B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDAAC7E15106EF50056840B /* ViewController.m */; };
+		5DDAAC8215106EF50056840B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DDAAC8015106EF50056840B /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DDAAC6715106EF50056840B /* GooglePlaceExampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglePlaceExampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDAAC6B15106EF50056840B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5DDAAC6D15106EF50056840B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5DDAAC6F15106EF50056840B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5DDAAC7315106EF50056840B /* GooglePlaceExampleProject-Info.plist */ = {isa = PBXFileReference; path = "GooglePlaceExampleProject-Info.plist"; sourceTree = "<group>"; };
+		5DDAAC7515106EF50056840B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DDAAC7715106EF50056840B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DDAAC7915106EF50056840B /* GooglePlaceExampleProject-Prefix.pch */ = {isa = PBXFileReference; path = "GooglePlaceExampleProject-Prefix.pch"; sourceTree = "<group>"; };
+		5DDAAC7A15106EF50056840B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5DDAAC7B15106EF50056840B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5DDAAC7D15106EF50056840B /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		5DDAAC7E15106EF50056840B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5DDAAC8115106EF50056840B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DDAAC6415106EF50056840B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDAAC6C15106EF50056840B /* UIKit.framework in Frameworks */,
+				5DDAAC6E15106EF50056840B /* Foundation.framework in Frameworks */,
+				5DDAAC7015106EF50056840B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DDAAC5C15106EF50056840B = {
+			isa = PBXGroup;
+			children = (
+				5DDAAC7115106EF50056840B /* GooglePlaceExampleProject */,
+				5DDAAC6A15106EF50056840B /* Frameworks */,
+				5DDAAC6815106EF50056840B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DDAAC6815106EF50056840B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DDAAC6715106EF50056840B /* GooglePlaceExampleProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DDAAC6A15106EF50056840B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DDAAC6B15106EF50056840B /* UIKit.framework */,
+				5DDAAC6D15106EF50056840B /* Foundation.framework */,
+				5DDAAC6F15106EF50056840B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DDAAC7115106EF50056840B /* GooglePlaceExampleProject */ = {
+			isa = PBXGroup;
+			children = (
+				5DDAAC7A15106EF50056840B /* AppDelegate.h */,
+				5DDAAC7B15106EF50056840B /* AppDelegate.m */,
+				5DDAAC7D15106EF50056840B /* ViewController.h */,
+				5DDAAC7E15106EF50056840B /* ViewController.m */,
+				5DDAAC8015106EF50056840B /* ViewController.xib */,
+				5DDAAC7215106EF50056840B /* Supporting Files */,
+			);
+			path = GooglePlaceExampleProject;
+			sourceTree = "<group>";
+		};
+		5DDAAC7215106EF50056840B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DDAAC7315106EF50056840B /* GooglePlaceExampleProject-Info.plist */,
+				5DDAAC7415106EF50056840B /* InfoPlist.strings */,
+				5DDAAC7715106EF50056840B /* main.m */,
+				5DDAAC7915106EF50056840B /* GooglePlaceExampleProject-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DDAAC6615106EF50056840B /* GooglePlaceExampleProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DDAAC8515106EF50056840B /* Build configuration list for PBXNativeTarget "GooglePlaceExampleProject" */;
+			buildPhases = (
+				5DDAAC6315106EF50056840B /* Sources */,
+				5DDAAC6415106EF50056840B /* Frameworks */,
+				5DDAAC6515106EF50056840B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooglePlaceExampleProject;
+			productName = GooglePlaceExampleProject;
+			productReference = 5DDAAC6715106EF50056840B /* GooglePlaceExampleProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DDAAC5E15106EF50056840B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 5DDAAC6115106EF50056840B /* Build configuration list for PBXProject "GooglePlaceExampleProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5DDAAC5C15106EF50056840B;
+			productRefGroup = 5DDAAC6815106EF50056840B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DDAAC6615106EF50056840B /* GooglePlaceExampleProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DDAAC6515106EF50056840B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDAAC7615106EF50056840B /* InfoPlist.strings in Resources */,
+				5DDAAC8215106EF50056840B /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DDAAC6315106EF50056840B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDAAC7815106EF50056840B /* main.m in Sources */,
+				5DDAAC7C15106EF50056840B /* AppDelegate.m in Sources */,
+				5DDAAC7F15106EF50056840B /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DDAAC7415106EF50056840B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DDAAC7515106EF50056840B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5DDAAC8015106EF50056840B /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DDAAC8115106EF50056840B /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DDAAC8315106EF50056840B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5DDAAC8415106EF50056840B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DDAAC8615106EF50056840B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GooglePlaceExampleProject/GooglePlaceExampleProject-Prefix.pch";
+				INFOPLIST_FILE = "GooglePlaceExampleProject/GooglePlaceExampleProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5DDAAC8715106EF50056840B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GooglePlaceExampleProject/GooglePlaceExampleProject-Prefix.pch";
+				INFOPLIST_FILE = "GooglePlaceExampleProject/GooglePlaceExampleProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DDAAC6115106EF50056840B /* Build configuration list for PBXProject "GooglePlaceExampleProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDAAC8315106EF50056840B /* Debug */,
+				5DDAAC8415106EF50056840B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DDAAC8515106EF50056840B /* Build configuration list for PBXNativeTarget "GooglePlaceExampleProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDAAC8615106EF50056840B /* Debug */,
+				5DDAAC8715106EF50056840B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DDAAC5E15106EF50056840B /* Project object */;
+}
