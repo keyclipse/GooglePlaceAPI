@@ -10,7 +10,7 @@
 #import "NSString+SBJSON.h"
 
 @implementation GooglePlacesAPI
-@synthesize delegate;
+@synthesize delegate,isUsingBiasRegion;
 
 -(void) requestAutoCompleteFinished:(ASIHTTPRequest *) request{
     NSLog(@"Request autocomplete %@",[request responseString]);
@@ -50,6 +50,11 @@
     NSLog(@"GOOGLE PLACES REQUEST FAILED with response %@",[request responseString]);
 }
 
+-(void) setBiasingWithLocationCoordinate:(CLLocationCoordinate2D)centerCoordinate andRadiusInMeters:(float)radius{
+    locationCoordinate = centerCoordinate;
+    radiusSearch = radius;
+}
+
 -(void) returnAutoCompletePlacesWithSearchString:(NSString *)inputSearchString{
     NSArray * addressArray = [inputSearchString componentsSeparatedByString:@" "];
     
@@ -59,9 +64,16 @@
         NSString * string = [addressArray objectAtIndex:i];
         searchString = [NSString stringWithFormat:@"%@+%@",searchString,string];
     }
-    //FOR AUSTRALIA ONLY
     
-    NSString * urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/autocomplete/json?input=%@&types=geocode&location=-25.88138678,134.784477&radius=2257000&sensor=true&key=%@&",searchString,GOOGLE_API_KEY];
+    NSString * urlString;
+    
+    
+    if (isUsingBiasRegion) {
+        urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/autocomplete/json?input=%@&types=geocode&location=%f,%f&radius=%f&sensor=true&key=%@&",searchString,locationCoordinate.latitude,locationCoordinate.longitude,radiusSearch,GOOGLE_API_KEY];
+    }else{
+        urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/autocomplete/json?input=%@&types=geocode&sensor=true&key=%@&",searchString,GOOGLE_API_KEY];
+    }
+
     NSURL * url = [NSURL URLWithString:urlString];
     ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
     request.delegate = self;
@@ -72,7 +84,7 @@
 
 -(void) getGooglePlaceDetailWithReference:(NSString *)reference{
 
-    //FOR AUSTRALIA ONLY    
+   
     NSString * urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/details/json?reference=%@&sensor=true&key=%@",reference,GOOGLE_API_KEY];
     NSURL * url = [NSURL URLWithString:urlString];
     ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];

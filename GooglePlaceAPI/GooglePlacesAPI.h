@@ -11,7 +11,7 @@
 #import "GooglePlaceAutoComplete.h"
 #import "GooglePlace.h"
 
-#define GOOGLE_API_KEY @"AIzaSyAGJo_zTZ9mKFUKsvgbjyPlJX45D9rUQpU"
+#define GOOGLE_API_KEY @"YOUR_API_KEY"
 @class GooglePlacesAPI;
 
 @protocol GooglePlacesAPIDelegate <NSObject>
@@ -29,10 +29,15 @@
 
 @interface GooglePlacesAPI : NSObject<ASIHTTPRequestDelegate>{
     id<GooglePlacesAPIDelegate> delegate;
+    CLLocationCoordinate2D locationCoordinate;
+    float radiusSearch;
+    BOOL isUsingBiasRegion;
 }
 
+@property(nonatomic) BOOL isUsingBiasRegion;
 @property(nonatomic,assign) id<GooglePlacesAPIDelegate> delegate;
 
+-(void) setBiasingWithLocationCoordinate:(CLLocationCoordinate2D) centerCoordinate andRadiusInMeters:(float) radius;
 -(void) returnAutoCompletePlacesWithSearchString:(NSString *) inputSearchString;
 -(void) getGooglePlaceDetailWithReference:(NSString *) reference;
 

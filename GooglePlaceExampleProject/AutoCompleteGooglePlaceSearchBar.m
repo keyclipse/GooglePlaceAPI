@@ -17,6 +17,11 @@
 -(void) initialise{
     self.delegate = self;
     googlePlaces = [GooglePlacesAPI new];
+    
+    //USE AUSTRALIA REGION BIASING
+    [googlePlaces setBiasingWithLocationCoordinate:CLLocationCoordinate2DMake(-25.88138678,134.784477) andRadiusInMeters:2257000];
+    googlePlaces.isUsingBiasRegion = YES;
+    
     googlePlaces.delegate = self;
     historySearchArray = [NSMutableArray new];
     historySearchReferenceArray = [NSMutableArray new];
