@@ -14,3 +14,5 @@ Next you have to link the following frameworks to the xcode project
 Then just import GooglePlaceAPI.h to use the API
 
 If you want to add more feature just fork and send me a pull request
+
+As a bonus I have added an auto complete search bar with google place autocomplete
