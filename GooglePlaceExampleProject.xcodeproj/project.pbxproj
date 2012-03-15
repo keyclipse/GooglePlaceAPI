@@ -39,6 +39,7 @@
 		5DDAACCC151071790056840B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDAACCB151071790056840B /* libz.dylib */; };
 		5DDAACCE151071870056840B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDAACCD151071870056840B /* MapKit.framework */; };
 		5DDAACD0151071940056840B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDAACCF151071940056840B /* CoreLocation.framework */; };
+		5DDE844B15116DEB00A574DF /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5DDE844A15116DEB00A574DF /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		5DDAACCB151071790056840B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5DDAACCD151071870056840B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5DDAACCF151071940056840B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5DDE844A15116DEB00A574DF /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		5DDAAC5C15106EF50056840B = {
 			isa = PBXGroup;
 			children = (
+				5DDE844A15116DEB00A574DF /* README */,
 				5DDAACCF151071940056840B /* CoreLocation.framework */,
 				5DDAACCD151071870056840B /* MapKit.framework */,
 				5DDAACCB151071790056840B /* libz.dylib */,
@@ -296,6 +299,7 @@
 			files = (
 				5DDAAC7615106EF50056840B /* InfoPlist.strings in Resources */,
 				5DDAAC8215106EF50056840B /* ViewController.xib in Resources */,
+				5DDE844B15116DEB00A574DF /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +442,7 @@
 				5DDAAC8715106EF50056840B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
